@@ -16,8 +16,8 @@ settings:
 
 monitors:
   - id: Jellyfin # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
+    name: Jellyfin Movie Server
+    description: 'Main Media Server.' # default=empty
     url: 'https://jfapp.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -33,6 +33,7 @@ monitors:
 
   - id: Game Server Panel
     name: Game Server Panel
+    description: 'Server Panel to Host Games'
     url: 'https://panel.beckerle.xyz/'
     method: GET
     expectStatus: 200
