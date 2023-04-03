@@ -18,7 +18,7 @@ monitors:
   - id: Jellyfin # unique identifier
     name: Jellyfin Movie Server
     description: 'Main Media Server.' # default=empty
-    url: 'https://jfapp.xyz/' # URL to fetch
+    url: 'https://jfapp.xyz/health' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     linkable: true # allows the title to be a link, default=true
@@ -26,7 +26,7 @@ monitors:
   - id: Requests
     name: Movie Requests
     description: 'Server For Requesting Movies'
-    url: 'https://requests.jellyfinserver.xyz/'
+    url: 'https://requests.jellyfinserver.xyz/api/v1/status'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
