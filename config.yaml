@@ -1,7 +1,7 @@
 settings:
   title: 'Status Page'
   url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
+  logo: logo-192x192.svg # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -16,8 +16,8 @@ settings:
 
 monitors:
   - id: Jellyfin # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
+    name: Jellyfin Movie Server
+    description: 'Main Media Server.' # default=empty
     url: 'https://jfapp.xyz/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
@@ -33,6 +33,7 @@ monitors:
 
   - id: Game Server Panel
     name: Game Server Panel
+    description: 'Server Panel to Host Games'
     url: 'https://panel.beckerle.xyz/'
     method: GET
     expectStatus: 200
