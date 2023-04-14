@@ -22,6 +22,7 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     linkable: true # allows the title to be a link, default=true
+    link: 'https://jfapp.xyz'
 
   - id: Requests
     name: Movie Requests
@@ -30,6 +31,7 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
+    link: 'https://requests.jellyfinserver.xyz'
 
   - id: Game Server Panel
     name: Game Server Panel
